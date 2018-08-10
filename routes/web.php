@@ -40,3 +40,6 @@ Route::patch('/topic/{topic}', 'TopicController@update')->name('topic.update');
 Route::post('/topic', 'TopicController@store')->name('topic.store');
 Route::get('/topic/edit/{topic}', 'TopicController@edit')->name('topic.edit');
 Route::delete('/topic/{topic}', 'TopicController@destroy')->name('topic.destroy');
+
+Route::post('/test', 'TestController@store')->name('test.store');
+Route::get('/test/{test}', 'TestController@show')->name('test.show');

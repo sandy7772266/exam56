@@ -69,7 +69,14 @@ class ExamController extends Controller
         //$exam = Exam::find($id);
         //$topics = Topic::where('exam_id', $exam->id)->get();
         //dd($exam->topics);
+        // if (Auth::check()){
+        //     if ($exam->topics->count()>5){
+        //          $exam->topics = $exam->topics->random(5);
+        //     }
+        //     return view('exam.show', compact('exam')); //;
+        // }
         return view('exam.show', compact('exam')); //;
+
     }
 
     /**
